@@ -24,7 +24,7 @@ int main()
     
     for(i = 0; i < linhas; i++){
        for(A = 0; A < colunas; A++){
-       		printf("%d",vetor[i][A]);
+       		printf("%d ",vetor[i][A]);
     	}
     printf("\n");
     }
