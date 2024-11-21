@@ -3,13 +3,14 @@
 
 int main()
 {
-    if(linhas == 0 || linhas < 0 || colunas == 0 || colunas < 0){
-        printf("[matriz vazia]");
-        exit();
-    }
+    
     int linhas , i , colunas, A;
     scanf("%d", &linhas);
     scanf("%d", &colunas);
+    if(linhas == 0 || linhas < 0 || colunas == 0 || colunas < 0){
+        printf("[matriz vazia]");
+        exit(0);
+    }
     
     int **vetor;
     vetor = (int**)malloc(linhas * sizeof(int*));
